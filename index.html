@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astha Sharma | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Astha Sharma</h1>
+            <nav>
+                <a href="#about" class="text-lg mx-2">About</a>
+                <a href="#skills" class="text-lg mx-2">Skills</a>
+                <a href="#projects" class="text-lg mx-2">Projects</a>
+                <a href="#contact" class="text-lg mx-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10">
+        <section id="about" class="bg-white p-6 rounded shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p>Hello! I am Astha Sharma, a final-year Computer Science student at Model Institute of Engineering and Technology. I am passionate about technology and continuously seek opportunities to learn and grow. With strong problem-solving skills and attention to detail, I thrive in dynamic environments and enjoy working both independently and in team settings.</p>
+        </section>
+
+        <section id="skills" class="bg-white p-6 rounded shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
+            <ul class="list-disc list-inside">
+                <li>Proficiency in programming languages: Python, C++, Java(Learning), Go-Lang(Learning)</li>
+                <li>Strong problem-solving skills</li>
+                <li>Excellent communication and interpersonal skills</li>
+                <li>Experience with collaborative tools and environments</li>
+                <li>Passionate about technology and innovation</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="bg-white p-6 rounded shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div class="space-y-4" id="projects-list">
+                <!-- Project 1 -->
+                <div class="bg-gray-100 p-4 rounded shadow-md">
+                    <h3 class="text-xl font-bold">Library Management System</h3>
+                    <p>A web-based application to manage library resources. It includes features such as book cataloging, user management, and borrowing/returning books.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-100 p-4 rounded shadow-md">
+                    <h3 class="text-xl font-bold">Weather Forecast App</h3>
+                    <p>A mobile app that provides weather updates and forecasts. It integrates with external APIs to fetch real-time weather data and displays it in a user-friendly interface.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-100 p-4 rounded shadow-md">
+                    <h3 class="text-xl font-bold">E-commerce Website</h3>
+                    <p>A fully functional e-commerce website with user authentication, product catalog, shopping cart, and payment integration. Built using modern web technologies.</p>
+                </div>
+            </div>
+            <button onclick="addProject()" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Add Project</button>
+        </section>
+
+        <section id="contact" class="bg-white p-6 rounded shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-lg font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-medium">Message</label>
+                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-6 mt-10 text-center">
+        <p>Contact: astha.sharma@example.com | LinkedIn: linkedin.com/in/asthasharma | GitHub: github.com/asthasharma</p>
+        <p>&copy; 2024 Astha Sharma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
